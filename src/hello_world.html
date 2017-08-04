@@ -1,0 +1,6 @@
+<label>Nome:</label>
+<!-- ngModel é para receber a variavel como parametro/ placeholder é o texto na caixa -->
+<input type="text" [(ngModel)]="yourName" placeholder="Digite seu nome aqui...">
+<hr>
+<!--  Display `yourName` -->
+<h1 [hidden]="!yourName">Hello {{yourName}}!</h1>
